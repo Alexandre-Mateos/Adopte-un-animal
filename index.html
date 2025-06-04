@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="assets/scripts/scripts.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
     <h1>Adopte un animal</h1>
     <form id="formulaire">
-        <label for="nom-animal">Nom de l'animal</label>
-        <input type="text" id="nom-animal">
-        <label for="race">Race</label>
-        <select id="race">
-            <option value="">-- sélectionne la race --</option>
-            <option value="Chat">Chat</option>
-            <option value="Poulet">Poulet</option>
-            <option value="Baleine">Baleine</option>
-            <option value="Yeti">Yéti</option>
-        </select>
-        <button type="submit">Adopter</button>
-        <button id="relacher-animal">Relacher</button>
+        <div>
+            <label for="nom-animal">Nom de l'animal</label>
+            <input type="text" id="nom-animal">
+        </div>
+        <div>
+            <label for="race">Race</label>
+            <select id="race">
+                <option value="">-- sélectionne la race --</option>
+                <option value="Chat">Chat</option>
+                <option value="Poulet">Poulet</option>
+                <option value="Baleine">Baleine</option>
+                <option value="Yeti">Yéti</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Adopter</button>
+            <button id="relacher-animal">Relacher</button>
+        </div>
     </form>
-    <div id="mon-animal"></div>
+    <div id="mon-animal" class="card hidden"></div>
 </body>
 </html>
